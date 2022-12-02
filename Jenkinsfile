@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment {
         NAME = 'Jenkins'
+        CREDS = credentials('github_pat')
     }
 
     stages {
@@ -9,6 +10,7 @@ pipeline {
             steps {
                 echo '${NAME}'
                 echo "${NAME}"
+                echo "${CREDS}"
             }
         }
     }

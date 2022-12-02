@@ -11,7 +11,7 @@ pipeline {
                 echo '${NAME}'
                 echo "${NAME}"
                 sh 'echo ${CREDS}'
-                sh 'cat ${CREDS} > secret.txt'
+                sh 'echo ${CREDS} > secret.txt'
                 sh 'cat secret.txt'
             }
         }

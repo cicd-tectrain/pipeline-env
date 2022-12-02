@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo '${NAME}'
                 echo "${NAME}"
-                echo "${CREDS}"
+                sh "echo ${CREDS}"
             }
         }
     }
